@@ -1,8 +1,6 @@
 "use client";
 
 import {
-  Card,
-  Grid,
   Tab,
   TabGroup,
   TabList,
@@ -12,45 +10,36 @@ import {
   Title,
 } from "@tremor/react";
 
+import Overview from "@/components/panels/overview";
+import Line1 from "@/components/panels/line-1";
+import Line2 from "@/components/panels/line-2";
+import Line3 from "@/components/panels/line-3";
+
 export default function DashboardExample() {
   return (
     <main className="p-12">
-      <Title>Dashboard</Title>
-      <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</Text>
+      <Title>Production Dashboard</Title>
+      <Text>Realtime factory status</Text>
 
       <TabGroup className="mt-6">
         <TabList>
           <Tab>Overview</Tab>
-          <Tab>Detail</Tab>
+          <Tab>Line 1</Tab>
+          <Tab>Line 2</Tab>
+          <Tab>Line 3</Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>
-            <Grid numItemsMd={2} numItemsLg={3} className="gap-6 mt-6">
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-              <Card>
-                {/* Placeholder to set height */}
-                <div className="h-28" />
-              </Card>
-            </Grid>
-            <div className="mt-6">
-              <Card>
-                <div className="h-80" />
-              </Card>
-            </div>
+          <TabPanel key={"Overview"}>
+            <Overview />
           </TabPanel>
-          <TabPanel>
-            <div className="mt-6">
-              <Card>
-                <div className="h-96" />
-              </Card>
-            </div>
+          <TabPanel key={"Line 1"}>
+            <Line1 />
+          </TabPanel>
+          <TabPanel key={"Line 2"}>
+            <Line2 />
+          </TabPanel>
+          <TabPanel key={"Line 3"}>
+            <Line3 />
           </TabPanel>
         </TabPanels>
       </TabGroup>

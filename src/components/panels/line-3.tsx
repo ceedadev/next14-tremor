@@ -83,7 +83,7 @@ const chart_data = [
 
 export default function Line3() {
   return (
-    <div className="mt-6 space-y-6">
+    <div className="mt-4 space-y-4 lg:mt-6 lg:space-y-6">
       <Grid numItemsLg={2} className="gap-6">
         <Card className="flex flex-col ">
           <Title className="mb-auto">Production Target</Title>
@@ -104,7 +104,7 @@ export default function Line3() {
           </div>
         </Card>
       </Grid>
-      <Grid numItemsMd={1} numItemsLg={3} className="gap-6">
+      <Grid numItemsMd={1} numItemsLg={3} className="gap-4 lg:gap-6">
         <Col numColSpanLg={2} numColSpanMd={1}>
           <Card>
             <Title>Production History</Title>

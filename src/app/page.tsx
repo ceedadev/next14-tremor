@@ -17,7 +17,7 @@ import Line3 from "@/components/panels/line-3";
 
 export default function DashboardExample() {
   return (
-    <main className="p-12">
+    <main className="p-4 lg:p-12">
       <Title>Production Dashboard</Title>
       <Text>Realtime factory status</Text>
 

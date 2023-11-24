@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Production Factory Dashboard: a Tremor.so Demo Project
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This repository demonstrates the use of the Tremor.so dashboard library to build an interactive and visually appealing Production Factory Dashboard. It's designed to showcase real-time data visualization and management for a production factory environment, using modern web technologies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **React** : A JavaScript library for building user interfaces, enabling the creation of reusable UI components.
+- **Next.JS 14** : A React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications.
+- **TailwindCSS**: A utility-first CSS framework for rapidly building custom designs, ensuring a sleek and responsive design.
+- **Tremor.so**: A powerful and intuitive dashboard library that provides pre-built components and layouts for building complex dashboards with ease.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To try it yourself with this project:
 
-## Learn More
+1. Clone the repository
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/ceedadev/next14-tremor.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd next14-tremor
+   ```
 
-## Deploy on Vercel
+3. Install dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Run development server.
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open <http://localhost:3000> from your browser
+
+## Usage
+
+Explore the dashboard to view the demo. The UI is interactive and allows for deep dives into specific metrics or issues.
+
+## Contribution
+
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
